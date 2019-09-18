@@ -1,7 +1,16 @@
-# canos-super-pom
+ï»¿# canos-super-pom
 super pom for canos projects
 
-## ²¿Êðµ½ÖÐÑë²Ö´¢
+## ä½¿ç”¨
+```
+    <parent>
+        <groupId>cn.canos</groupId>
+        <artifactId>super-pom</artifactId>
+        <version>1.0.1</version>
+    </parent>
+```
+
+## éƒ¨ç½²åˆ°ä¸­å¤®ä»“å‚¨
 ```
 mvn clean deploy -Dgpg.skip=false
 ```
