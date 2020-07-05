@@ -20,7 +20,7 @@
 
     <groupId>cn.canos</groupId>
     <artifactId>super-pom</artifactId>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
 
     <parent>
         <groupId>cn.canos</groupId>
@@ -49,6 +49,9 @@
 
         <!-- maven-surefire-plugin -->
         <maven-surefire-plugin_version>2.20</maven-surefire-plugin_version>
+
+        <!-- maven-javadoc-plugin -->
+        <maven-javadoc-plugin_version>3.2.0</maven-javadoc-plugin_version>
 
         <!-- spring-boot-maven-plugin -->
         <spring-boot-maven-plugin_version>1.5.10.RELEASE</spring-boot-maven-plugin_version>
@@ -86,9 +89,52 @@
                     <artifactId>spring-boot-maven-plugin</artifactId>
                     <version>${spring-boot-maven-plugin_version}</version>
                 </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>${maven-javadoc-plugin_version}</version>
+                </plugin>
             </plugins>
 
         </pluginManagement>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
+
+        </plugins>
 
     </build>
 
