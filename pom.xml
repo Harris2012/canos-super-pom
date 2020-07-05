@@ -20,7 +20,7 @@
 
     <groupId>cn.canos</groupId>
     <artifactId>super-pom</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
 
     <parent>
         <groupId>cn.canos</groupId>
@@ -39,7 +39,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- maven-source-plugin -->
-        <maven-source-plugin_version>3.0.1</maven-source-plugin_version>
+        <maven-source-plugin_version>3.2.0</maven-source-plugin_version>
 
         <!-- maven-compiler-plugin -->
         <maven-compiler-plugin_version>3.6.1</maven-compiler-plugin_version>
@@ -100,9 +100,8 @@
                 <artifactId>maven-source-plugin</artifactId>
                 <executions>
                     <execution>
-                        <phase>package</phase>
                         <goals>
-                            <goal>jar</goal>
+                            <goal>jar-no-fork</goal>
                         </goals>
                     </execution>
                 </executions>
