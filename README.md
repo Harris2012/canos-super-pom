@@ -6,7 +6,7 @@ super pom for canos projects
     <parent>
         <groupId>cn.canos</groupId>
         <artifactId>super-pom</artifactId>
-        <version>1.0.3</version>
+        <version>1.0.5</version>
     </parent>
 ```
 
