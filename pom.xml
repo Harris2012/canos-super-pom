@@ -20,12 +20,12 @@
 
     <groupId>cn.canos</groupId>
     <artifactId>super-pom</artifactId>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
 
     <parent>
         <groupId>cn.canos</groupId>
         <artifactId>super-rule</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
     </parent>
 
     <packaging>pom</packaging>
