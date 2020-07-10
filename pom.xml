@@ -34,6 +34,8 @@
 
     <properties>
 
+        <java.version>1.8</java.version>
+
         <!-- maven-resources-plugin -->
         <maven-resources-plugin_version>3.0.2</maven-resources-plugin_version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -50,13 +52,20 @@
         <!-- maven-surefire-plugin -->
         <maven-surefire-plugin_version>2.20</maven-surefire-plugin_version>
 
+        <!-- maven-site-plugin -->
+        <maven-site-plugin_version>3.7.1</maven-site-plugin_version>
+
+        <!-- maven-assembly-plugin -->
+        <maven-assembly-plugin_version>3.1.0</maven-assembly-plugin_version>
+
+        <!-- maven-project-info-reports-plugin -->
+        <maven-project-info-reports-plugin_version>2.9</maven-project-info-reports-plugin_version>
+
         <!-- maven-javadoc-plugin -->
         <maven-javadoc-plugin_version>3.2.0</maven-javadoc-plugin_version>
 
         <!-- spring-boot-maven-plugin -->
         <spring-boot-maven-plugin_version>1.5.10.RELEASE</spring-boot-maven-plugin_version>
-
-        <java.version>1.8</java.version>
 
     </properties>
 
@@ -83,6 +92,21 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>${maven-surefire-plugin_version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>${maven-site-plugin_version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>${maven-assembly-plugin_version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-project-info-reports-plugin</artifactId>
+                    <version>${maven-project-info-reports-plugin_version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
