@@ -1,5 +1,7 @@
-﻿# canos-super-pom
+# canos-super-pom
 super pom for canos projects
+
+## 已废弃，请不要使用
 
 ## 使用
 ```
